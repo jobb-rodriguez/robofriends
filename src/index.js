@@ -8,7 +8,8 @@ import 'tachyons';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Hello />
+    {/* geeting is a prop */}
+    <Hello greeting={'Hello, React Ninja'} />
   </React.StrictMode>
 );
 

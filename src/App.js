@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
 import robots from './robots'; // use deconstructor if multiple exports
+import './App.css';
 
 class App extends Component {
     constructor() {
@@ -24,8 +25,8 @@ class App extends Component {
         })
         return (
             <Fragment>
-                <header>
-                    <h1 className='tc'>RoboFriends</h1>
+                <header className='tc'>
+                    <h1 className='f2'>RoboFriends</h1>
                 </header>
                 <main className='tc'>
                     <SearchBox searchChange={this.onSearchChange} />

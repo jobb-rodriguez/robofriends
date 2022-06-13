@@ -1,0 +1,4 @@
+RECOMMENDED: update package.json file
+ALTERNATIVE: npm audit fix
+ - check the updates via npm audit first
+ELSE: npm audit fix --force

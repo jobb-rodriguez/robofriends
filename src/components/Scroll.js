@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // props, state, children
 const Scroll = (props) => {

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import CardList from '../components/CardList';
 import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
+import ErrorBoundary from './ErrorBoundary';
 // import robots from './robots'; // use deconstructor if multiple exports
 import './App.css';
 
@@ -49,7 +50,9 @@ class App extends Component {
                     <main className='tc'>
                         <SearchBox searchChange={this.onSearchChange} />
                         <Scroll>
-                            <CardList robots={filteredRobots} />
+                            <ErrorBoundary>
+                                <CardList robots={filteredRobots} />
+                            </ErrorBoundary>
                         </Scroll>
                     </main>
                 </Fragment>
